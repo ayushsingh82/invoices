@@ -1,6 +1,6 @@
 # Embedding Invoices as a Module Federation remote
 
-Invoices is still an independent static release (`pnpm build` → `dist/`, frozen and rolled back as in [deployment](deployment.md)). It is **also**
+Invoices is still an independent static release (`pnpm build` → `dist/`, frozen and rolled back as in the deployment note (docs/deployment.md)). It is **also**
 built as a Module Federation remote that a host app, such as the dashboard, can load. The two builds are separate: the remote never
 touches `dist/`, its digest, `pnpm freeze` or the release server.
 
